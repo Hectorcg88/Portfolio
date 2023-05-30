@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/java.js"defer></script>
+</head>
+<body>
+  <header>
+    <h1>Héctor Cases</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="inicio">
+    <div class="container">
+      <h2>Bienvenido a mi Portfolio</h2>
+      <img src="" alt="Foto de perfil">
+      <p>Soy un desarrollador web.</p>
+      <a href="#contacto" class="btn">Contáctame</a>
+    </div>
+  </section>
+
+  <section id="proyectos" class="proyectos">
+    <div class="container">
+      <h2>Proyectos Destacados</h2>
+      <div class="project">
+        <img src="" alt="Proyecto 1">
+        <h3>Proyecto 1</h3>
+        <p>Descripción 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="project">
+        <img src="" alt="Proyecto 2">
+        <h3>Proyecto 2</h3>
+        <p>Descripción 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="habilidades" class="habilidades">
+    <div class="container">
+      <h2>Habilidades</h2>
+      <div class="skills">
+        <div class="skill">
+          <h3>HTML</h3>
+          <div class="skill-linea" style="width: 80%"></div>
+        </div>
+        <div class="skill">
+          <h3>CSS</h3>
+          <div class="skill-linea" style="width: 70%"></div>
+        </div>
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <div class="skill-linea" style="width: 60%"></div>
+        </div>
+        <div class="skill">
+          <h3>Java</h3>
+          <div class="skill-linea" style="width: 50%"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="experiencia">
+    <div class="container">
+      <h2>Experiencia</h2>
+      <div class="trabajo">
+        <h3>Desarrollador Web en ABC Company</h3>
+        <p>Período: 2019-2020</p>
+        <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="trabajo">
+        <h3>Desarrollador Web en XYZ Agency</h3>
+        <p>Período: 2020-2021</p>
+        <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="trabajo">
+        <h3>Desarrollador Web Freelance</h3>
+        <p>Período: 2021-2022</p>
+        <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="trabajo">
+        <h3>Desarrollador Web en PQR Solutions</h3>
+        <p>Período: 2022-2023</p>
+        <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <div class="container">
+      <h2>Contáctame</h2>
+      <div class="contacto-form">
+        <form id="contacto-form" method="POST">
+          <div class="form-grupo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          </div>
+          <div class="form-grupo">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+          </div>
+          <div class="form-grupo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+          </div>
+          <button type="submit" class="btn">Enviar mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Contacta: 666043813, casesgimenezh@gmail.com o através del formulario de arriba</p>
+  </footer>
+
+
+  <div class="slider">
+    <div class="list">
+        <div class="item">
+            <img src="media/Captura de pantalla_20230129_215311.png" alt="">
+            <div class="text-overlay">
+              <h3>Youtube clone</h3>
+              <p>En este proyecto tuve que realizar un clon de youtube.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="media/Captura de pantalla_20230129_220744.png" alt="">
+            <div class="text-overlay">
+              <h3>Google clone</h3>
+              <p>En este proyecto realice una copia de Google.com con Html y Css.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="media/Captura de pantalla_20230129_222641.png" alt="">
+            <div class="text-overlay">
+              <h3>Sofware de Pedidos</h3>
+              <p>Con java realice un sofware para la gestión de pedidos para una empresa.</p>
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <button id="prev"><</button>
+        <button id="next">></button>
+    </div>
+    <ul class="dots">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</body>
+</html>
