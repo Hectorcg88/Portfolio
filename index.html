@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/java.js"defer></script>
+  <script src="js/java.js" defer></script>
 </head>
+
 <body>
   <header>
     <h1>Héctor Cases</h1>
@@ -16,32 +18,59 @@
         <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#habilidades">Habilidades</a></li>
         <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
       </ul>
     </nav>
   </header>
 
   <section id="inicio" class="inicio">
     <div class="container">
+      <img src="media/aaa.jpeg" alt="Foto de perfil" class="perfil">
       <h2>Bienvenido a mi Portfolio</h2>
-      <img src="" alt="Foto de perfil">
-      <p>Soy un desarrollador web.</p>
+      <p> Como desarrollador web altamente motivado, me especializo en la creación de sitios web atractivos y
+        funcionales utilizando tecnologías como HTML, CSS y JavaScript. Mi enfoque se centra en colaborar estrechamente
+        con los clientes para entender sus necesidades y ofrecer soluciones web personalizadas. Le invito a explorar mi
+        trabajo y espero tener la oportunidad de contribuir al éxito de su proyecto.</p>
       <a href="#contacto" class="btn">Contáctame</a>
     </div>
   </section>
 
   <section id="proyectos" class="proyectos">
-    <div class="container">
-      <h2>Proyectos Destacados</h2>
-      <div class="project">
-        <img src="" alt="Proyecto 1">
-        <h3>Proyecto 1</h3>
-        <p>Descripción 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <h1>Proyectos destacados</h1>
+    <div class="slider">
+      <div class="list">
+        <div class="item">
+          <img src="media/Captura de pantalla_20230129_215311.png" alt="">
+          <div class="text-overlay">
+            <h3>Youtube clone</h3>
+            <p>En este proyecto tuve que realizar un clon de youtube.</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="media/Captura de pantalla_20230129_220744.png" alt="">
+          <div class="text-overlay">
+            <h3>Google clone</h3>
+            <p>En este proyecto realice una copia de Google.com con Html y Css.</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="media/Captura de pantalla_20230129_222641.png" alt="">
+          <div class="text-overlay">
+            <h3>Sofware de Pedidos</h3>
+            <p>Con java realice un sofware para la gestión de pedidos para una empresa.</p>
+          </div>
+        </div>
       </div>
-      <div class="project">
-        <img src="" alt="Proyecto 2">
-        <h3>Proyecto 2</h3>
-        <p>Descripción 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="buttons">
+        <button id="prev">
+          << /button>
+            <button id="next">></button>
       </div>
+      <ul class="dots">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
   </section>
 
@@ -65,32 +94,70 @@
           <h3>Java</h3>
           <div class="skill-linea" style="width: 50%"></div>
         </div>
+        <div class="skill">
+          <h3>PHP</h3>
+          <div class="skill-linea" style="width: 100%"></div>
+        </div>
+        <div class="skill">
+          <h3>C+</h3>
+          <div class="skill-linea" style="width: 75%"></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="experiencia">
-    <div class="container">
-      <h2>Experiencia</h2>
-      <div class="trabajo">
-        <h3>Desarrollador Web en ABC Company</h3>
-        <p>Período: 2019-2020</p>
-        <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <section class="experiencia" id="experiencia">
+    <h1>Mi experiencia</h1>
+    <div class="card-container">
+      <div class="card">
+        <div class="poster">
+          <img src="media/web-3.jpg" alt="Logo de ABC Company">
+        </div>
+        <div class="details">
+          <div class="info">
+            <h3>Desarrollador Web en ABC Company</h3>
+            <p>
+              Como desarrollador web en ABC Company, mi responsabilidad era crear y mantener sitios web para clientes.
+              Utilicé mis habilidades en HTML, CSS y JavaScript para desarrollar interfaces atractivas y funcionales.
+              También colaboré con el equipo de diseño y probé el rendimiento de los sitios para garantizar una
+              experiencia de usuario óptima.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="trabajo">
-        <h3>Desarrollador Web en XYZ Agency</h3>
-        <p>Período: 2020-2021</p>
-        <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <div class="card">
+        <div class="poster">
+          <img src="media/0_amxsjNBdP7P8qQOT.jpg" alt="poster de la película avatar">
+        </div>
+        <div class="details">
+          <div class="info">
+            <h3>Desarrollador web en XYZ Solutions</h3>
+            <p>
+              Trabajé estrechamente con clientes para entender sus necesidades y traducirlas en soluciones web
+              efectivas. Utilicé tecnologías como HTML, CSS, JavaScript y PHP, y colaboré con diseñadores y equipos de
+              marketing para lograr resultados sobresalientes. También realicé pruebas exhaustivas para garantizar la
+              calidad y el rendimiento de los sitios web entregados.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="trabajo">
-        <h3>Desarrollador Web Freelance</h3>
-        <p>Período: 2021-2022</p>
-        <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="trabajo">
-        <h3>Desarrollador Web en PQR Solutions</h3>
-        <p>Período: 2022-2023</p>
-        <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <div class="card">
+        <div class="poster">
+          <img src="media/Oracle.jpg" alt="poster de la película avatar">
+        </div>
+        <div class="details">
+          <div class="info">
+            <h3>Desarrollador web en DEF Digital</h3>
+            <p>
+              Trabajé en estrecha colaboración con diseñadores y equipos de marketing para implementar estrategias
+              digitales efectivas. Utilicé tecnologías como HTML, CSS, JavaScript, así como frameworks y CMS como React
+              y WordPress. Además, llevé a cabo pruebas exhaustivas y optimizaciones para garantizar una experiencia de
+              usuario excepcional.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -122,40 +189,6 @@
     <p>Contacta: 666043813, casesgimenezh@gmail.com o através del formulario de arriba</p>
   </footer>
 
-
-  <div class="slider">
-    <div class="list">
-        <div class="item">
-            <img src="media/Captura de pantalla_20230129_215311.png" alt="">
-            <div class="text-overlay">
-              <h3>Youtube clone</h3>
-              <p>En este proyecto tuve que realizar un clon de youtube.</p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="media/Captura de pantalla_20230129_220744.png" alt="">
-            <div class="text-overlay">
-              <h3>Google clone</h3>
-              <p>En este proyecto realice una copia de Google.com con Html y Css.</p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="media/Captura de pantalla_20230129_222641.png" alt="">
-            <div class="text-overlay">
-              <h3>Sofware de Pedidos</h3>
-              <p>Con java realice un sofware para la gestión de pedidos para una empresa.</p>
-            </div>
-        </div>
-    </div>
-    <div class="buttons">
-        <button id="prev"><</button>
-        <button id="next">></button>
-    </div>
-    <ul class="dots">
-        <li class="active"></li>
-        <li></li>
-        <li></li>
-    </ul>
-</div>
 </body>
+
 </html>
