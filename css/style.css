@@ -107,11 +107,6 @@ nav ul li a {
   text-align: center;
 }
 
-.contacto{
-  background-color: white;
-  color: #333;
-}
-
 .experiencia{
   background-color: #333;
   color: #fff;
@@ -123,6 +118,14 @@ nav ul li a {
 .project img {
   max-width: 100%;
   margin-bottom: 10px;
+}
+.contacto{
+  background-color: white;
+  color: #333;
+}
+
+.contacto .container {
+  text-align: center;
 }
 
 .contacto-form {
