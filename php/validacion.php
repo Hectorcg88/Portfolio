@@ -11,10 +11,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         // Este if es para ver si el email tiene un formato correcto
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            echo "El correo electrónico no es válido, por fovor utiliza uno correcto.";
-            //Si esta todo correcto aparece este mensaje
+            echo "El correo electrónico no es válido, por favor utiliza uno correcto.";
         } else {
-            echo "Formulario enviado correctamente.";
+            echo "<h2>Formulario enviado correctamente</h2>";
+            echo "<p>Nombre: " . $nombre . "</p>";
+            echo "<p>Email: " . $email . "</p>";
+            echo "<p>Mensaje: " . $mensaje . "</p>";
         }
     }
 }
